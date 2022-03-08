@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+  
+<servlet>
+    <servlet-name>BooklistServlet</servlet-name>
+    <servlet-class>cn.xg.action.main.BooklistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BooklistServlet</servlet-name>
+    <url-pattern>/main/booklist.do</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>cn.xg.action.main.CategoryServlet</servlet-class>
+     <init-param>
+            <param-name>size</param-name>
+            <param-value>3</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/main/category.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>RecommendServlet</servlet-name>
+    <servlet-class>cn.xg.action.main.RecommendServlet</servlet-class>
+     <init-param>
+            <param-name>size</param-name>
+            <param-value>2</param-value>
+      </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecommendServlet</servlet-name>
+    <url-pattern>/main/recommend.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>NewServlet</servlet-name>
+    <servlet-class>cn.xg.action.main.NewServlet</servlet-class>
+     <init-param>
+            <param-name>size</param-name>
+            <param-value>4</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewServlet</servlet-name>
+    <url-pattern>/main/new.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>HotServlet</servlet-name>
+    <servlet-class>cn.xg.action.main.HotServlet</servlet-class>
+     <init-param>
+            <param-name>size</param-name>
+            <param-value>3</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HotServlet</servlet-name>
+    <url-pattern>/main/hot.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
